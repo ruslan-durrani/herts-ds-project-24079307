@@ -1,0 +1,7 @@
+metric,value
+exact_duplicate_rows,5583
+duplicate_rows_by_crime_id_and_month,20877
+invalid_month_values,0
+invalid_longitude_global_range,0
+invalid_latitude_global_range,0
+outside_uk_bounding_box,0

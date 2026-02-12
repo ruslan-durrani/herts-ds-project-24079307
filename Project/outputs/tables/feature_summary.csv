@@ -1,0 +1,14 @@
+feature,dtype,non_null_count,missing_count,missing_percent
+Crime ID,object,109988,20902,15.97
+Month,object,130890,0,0.0
+Reported by,object,130890,0,0.0
+Falls within,object,130890,0,0.0
+Longitude,float64,125719,5171,3.95
+Latitude,float64,125719,5171,3.95
+Location,object,130890,0,0.0
+LSOA code,object,125719,5171,3.95
+LSOA name,object,125719,5171,3.95
+Crime type,object,130890,0,0.0
+Last outcome category,object,109988,20902,15.97
+Context,float64,0,130890,100.0
+source_file,object,130890,0,0.0

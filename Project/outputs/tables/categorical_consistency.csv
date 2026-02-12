@@ -1,0 +1,11 @@
+column,raw_unique_count,normalized_unique_count,formatting_issue_count
+Crime ID,109988,109988,0
+Month,25,25,0
+Reported by,1,1,0
+Falls within,1,1,0
+Location,6177,6177,0
+LSOA code,1093,1093,0
+LSOA name,1093,1093,0
+Crime type,14,14,0
+Last outcome category,13,13,0
+source_file,25,25,0

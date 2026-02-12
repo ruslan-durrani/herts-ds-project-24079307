@@ -1,0 +1,12 @@
+step,before_count,after_count,note
+Normalized categorical/string formatting,130890,130890,Trimmed and standardized whitespace to improve categorical consistency.
+Converted Month to datetime and extracted year/month features,130890,130890,EDA-level time features for descriptive analysis only.
+Handled missing values in Location,0,0,Filled missing Location to retain records without dropping data.
+Handled missing values in LSOA code,5171,0,Filled missing LSOA code to retain records without dropping data.
+Handled missing values in LSOA name,5171,0,Filled missing LSOA name to retain records without dropping data.
+Handled missing values in Crime type,0,0,Filled missing Crime type to retain records without dropping data.
+Handled missing values in Last outcome category,20902,0,Filled missing Last outcome category to retain records without dropping data.
+Handled missing values in Context,130890,0,Filled missing Context to retain records without dropping data.
+Removed exact duplicate rows,130890,125307,Dropped only exact duplicates to avoid duplicate-event overcounting.
+Validated latitude/longitude ranges,0,0,Invalid global coordinates replaced with missing values for safe spatial plotting.
+Standardized crime category naming,14,14,Resolved case-format inconsistencies while preserving category meaning.
