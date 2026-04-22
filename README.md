@@ -1,38 +1,62 @@
-# Bedfordshire Crime EDA
+# Crime Analysis and Prediction using Machine Learning
 
-This project runs exploratory data analysis (EDA) on Bedfordshire UK Police street crime data.
+This project analyses UK police crime data to identify patterns, detect hotspots, and predict future crime levels using machine learning techniques.
 
-## Project Structure
+## Overview
 
-- `dataset/` - input monthly CSV files
-- `outputs/` - generated cleaned data, tables, figures, report
-- `eda.py` - main EDA pipeline script
-- `requirements.txt` - Python dependencies
-- `venv/` - virtual environment
+Crime is influenced by both time and location. This project uses data analysis and machine learning to:
 
-## Run
+- Explore crime trends over time
+- Detect high-crime hotspots
+- Predict future crime levels
+- Explain model predictions
 
-1. Install dependencies (if not already installed):
+The dataset was collected from Police.uk Open Crime Data and aggregated at LSOA-month level.
 
-```bash
-venv/bin/pip install -r requirements.txt
-```
+## Features
 
-2. Run the EDA pipeline (recommended, using project venv):
+### 1. Exploratory Data Analysis (EDA)
+- Monthly crime trends
+- Seasonal patterns
+- Top crime categories
+- Spatial crime distribution
 
-```bash
-MPLCONFIGDIR=/tmp XDG_CACHE_HOME=/tmp venv/bin/python eda.py --dataset-dir dataset --output-dir outputs
-```
+### 2. Hotspot Detection
+Implemented clustering techniques:
 
-3. Run the EDA pipeline (simple command, only if dependencies are installed globally):
+- KMeans Clustering
+- DBSCAN
 
-```bash
-python3 eda.py --dataset-dir dataset --output-dir outputs
-```
+### 3. Crime Prediction
+Implemented regression models:
 
-## Main Outputs
+- Linear Regression
+- Random Forest Regressor
+- Regularised Random Forest
+- Tuned Random Forest
 
-- Cleaned dataset: `outputs/cleaned/bedfordshire_crime_cleaned.csv`
-- Tables: `outputs/tables/`
-- Figures: `outputs/figures/`
-- EDA summary: `outputs/report/eda_summary.md`
+Final tuned model achieved RMSE: 4.62
+
+### 4. Model Explainability
+Used SHAP to understand feature importance.
+
+## Results
+
+| Model | RMSE |
+|-------|------:|
+| Linear Regression | 5.35 |
+| Random Forest | 4.84 |
+| Regularised RF | 4.86 |
+| Tuned RF | 4.62 |
+
+## Technologies Used
+
+Python, Pandas, NumPy, Matplotlib, Scikit-learn, SHAP, Jupyter Notebook
+
+## Dataset Source
+
+https://data.police.uk/data/
+
+## Author
+
+Developed as part of an MSc Data Analytics / Machine Learning project.
