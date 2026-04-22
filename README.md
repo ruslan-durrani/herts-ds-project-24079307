@@ -21,11 +21,22 @@ The dataset was collected from Police.uk Open Crime Data and aggregated at LSOA-
 - Top crime categories
 - Spatial crime distribution
 
-### 2. Hotspot Detection
+### 2. Hotspot Detection / Clustering Results
 Implemented clustering techniques:
 
-- KMeans Clustering
-- DBSCAN
+#### KMeans Clustering
+- Grouped crime regions into 4 clusters
+- Provided general area segmentation
+- Did not clearly isolate extreme hotspots
+- Lower silhouette score compared to DBSCAN
+
+#### DBSCAN
+- Identified dense crime hotspots effectively
+- Detected outliers/noise using label -1
+- Cluster 2 represented very high crime areas
+- Cluster 1 represented moderate crime areas
+- Cluster 0 represented low crime regions
+- Better suited for irregular real-world crime patterns
 
 ### 3. Crime Prediction
 Implemented regression models:
@@ -40,7 +51,15 @@ Final tuned model achieved RMSE: 4.62
 ### 4. Model Explainability
 Used SHAP to understand feature importance.
 
+Important features:
+- lag1
+- dominantTypeCount
+- Latitude
+- Longitude
+
 ## Results
+
+### Prediction Performance
 
 | Model | RMSE |
 |-------|------:|
@@ -57,6 +76,10 @@ Python, Pandas, NumPy, Matplotlib, Scikit-learn, SHAP, Jupyter Notebook
 
 https://data.police.uk/data/
 
+## Project
+
+MSc Data Analytics / Machine Learning Project
+
 ## Author
 
-Developed as part of an MSc Data Analytics / Machine Learning project.
+**Muhammad Ruslan Babar**
